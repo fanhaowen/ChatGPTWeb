@@ -13,13 +13,13 @@ import (
 )
 
 const (
-	authorization = "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"
+	authorization = "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"
 )
 
 func main() {
 	var OpenID string
 	var msg string
-	msg = "using go language to implement quickSort."
+	msg = "我有点饿了，你有什么推荐给我的吗"
 	userInfoMap := make(map[string]*userInfo)
 	info, ok := userInfoMap[OpenID]
 	if !ok || info.ttl.Before(time.Now()) {
@@ -89,8 +89,8 @@ type userInfo struct {
 func CreateChatReqBody(msg string) *bytes.Buffer {
 	req := &ChatReq{
 		Messages:    msg,
-		Model:       "text-curie-001",
-		MaxToken:    2048,
+		Model:       "text-davinci-003",
+		MaxToken:    256,
 		Temperature: 0,
 	}
 	return bytes.NewBuffer(req.ToJson())
