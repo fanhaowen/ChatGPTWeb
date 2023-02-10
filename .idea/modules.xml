@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../ChatGPTWebLocal/.idea/ChatGPTWeb.iml" filepath="$PROJECT_DIR$/../ChatGPTWebLocal/.idea/ChatGPTWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ChatGPTWeb.iml" filepath="$PROJECT_DIR$/.idea/ChatGPTWeb.iml" />
     </modules>
   </component>
 </project>
